@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Allows a user to fill in the info needed for a new experiment
+Has textfields for experiment title, description, and min trials
+Has spinners for selecting experiment type, if it requires locations
+and if location constraints should be enforced-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backdrop"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/norm_text"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:text="Publish Experiment"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/norm_text"
+        android:gravity="center_horizontal"
+        android:paddingTop="1dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/header"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/norm_text"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/expTitle_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:hint="Experiment Title"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/expDesc_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:hint="Experiment Description"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/expMinNTrials_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:hint="Minimum Number Of Trials"
+        android:inputType="number"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/select_experiment_type_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:text="Select Experiment Type"
+        android:textColor="@color/main_text"
+        android:textSize="20sp"
+        />
+    <Spinner
+        android:id="@+id/experiment_type_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="20dp"
+        android:gravity="top"/>
+
+    <TextView
+        android:id="@+id/set_experiment_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:text="Location Enabled"
+        android:textColor="@color/main_text"
+        android:textSize="20sp"
+        android:visibility="visible" />
+    <Spinner
+        android:id="@+id/experiment_location_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="20dp"
+        android:gravity="top"/>
+
+    <TextView
+        android:id="@+id/request_trials_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:text="Enforce Trial Locations"
+        android:textColor="@color/main_text"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/trial_location_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="30dp"
+        android:drawablePadding="7dp"
+        android:gravity="top"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+</LinearLayout>

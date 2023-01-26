@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Show a question in the question listView. Shows the title, the content,
+the date, the poster, and the number of answers the question has-->
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/forum_post_left_group"
+        android:layout_marginLeft="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:id="@+id/forum_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:text="Lorem ipsum dolor?"
+            android:maxLines="1"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20dp"
+            android:autoSizeMinTextSize="15dp"
+            android:textColor="@color/title">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/forum_post_body"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor ligula, accumsan non ex ut, tincidunt sollicitudin felis. "
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/forum_post_title"
+            android:textSize="12dp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forum_post_right_group"
+        android:layout_toRightOf="@id/forum_post_left_group"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/forum_post_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1111-11-11 00:00"
+                android:layout_alignRight="@id/forum_post_info"
+                android:textSize="12sp">
+
+            </TextView>
+
+
+
+        <RelativeLayout
+            android:id="@+id/forum_post_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forum_post_time"
+            android:layout_marginTop="10dp"
+            >
+
+        <RelativeLayout
+            android:id="@+id/forum_user_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/forum_user_icon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/forum_post_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/forum_user_icon"
+                android:text="user-1234"
+                android:minWidth="50dp"
+                android:maxWidth="50dp"
+                android:maxLines="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="12dp"
+                android:autoSizeMinTextSize="8dp"
+                android:layout_centerVertical="true"
+                >
+
+            </TextView>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/forum_reply_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/forum_user_group">
+
+                <ImageView
+                    android:id="@+id/forum_reply_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_chat"/>
+
+                <TextView
+                    android:id="@+id/forum_reply_number"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/forum_reply_icon"
+                    android:text="-1"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

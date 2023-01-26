@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Displays the user's name and a tablayout for their owned/subscribed experiments-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.home.HomeFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=" Welcome,"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/norm_text"
+        android:background="@color/header"/>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="top"
+        android:textColor="@color/norm_text"
+        android:maxLines="1"
+        android:background="@color/header"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/header_left"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabSelectedTextColor="@color/main_text"
+        android:background="@color/backdrop"
+        app:tabTextColor="@color/neutral"
+        app:tabIndicatorColor="@color/spark_text">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Experiments" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscribed Experiments" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager_id"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablayout_id"
+        android:layout_marginBottom="50dp"
+        android:background="@color/backdrop">
+
+
+    </androidx.viewpager2.widget.ViewPager2>
+</LinearLayout>

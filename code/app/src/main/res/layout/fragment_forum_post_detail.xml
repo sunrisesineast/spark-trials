@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Shows someone's post by providing title and body of post
+Also provides buttons and a textfield at bottom of fragment to allow user
+to respond-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/forum_ask_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:id="@+id/forum_detail_header_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/forum_detail_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="X"
+                android:textColor="@color/cancel"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:id="@+id/forum_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Title"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/forum_detail_post_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/forum_detail_header_bar"
+            android:layout_marginBottom="40dp">
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/forum_detail_post_question"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/norm_shadow"-->
+<!--                >-->
+<!--                <include layout="@layout/list_content_forum_post" />-->
+<!--            </RelativeLayout>-->
+
+            <ListView
+                android:id="@+id/forum_detail_post_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+            <TextView
+                android:id="@+id/forum_detail_no_reply_yet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Reply yet."
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/forum_detail_reply"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/spark_text"
+                android:textSize="20dp"
+                android:text="Reply" />
+
+            <EditText
+                android:id="@+id/forum_detail_add_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/forum_detail_reply"
+                android:hint="Add a comment"
+
+                />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

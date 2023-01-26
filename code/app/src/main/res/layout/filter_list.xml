@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--The selection menu for filtering search results. Has a checkbox for each filter-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/check_box_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Title" />
+
+    <CheckBox
+        android:id="@+id/check_box_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Description" />
+
+    <CheckBox
+        android:id="@+id/check_box_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Username" />
+
+    <CheckBox
+        android:id="@+id/check_box_status_active"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Status: Active" />
+
+    <CheckBox
+        android:id="@+id/check_box_status_inactive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Status: Inactive" />
+
+</LinearLayout>

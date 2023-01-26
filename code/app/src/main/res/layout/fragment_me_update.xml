@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Allows user to edit their information. Has a header and provides textfields
+for user to fill in their new username/contact info-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backdrop">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/norm_text"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:text="Edit Profile"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="@color/norm_text"
+        android:gravity="center_horizontal"
+        android:paddingTop="1dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/header"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/norm_text"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_text"
+        android:textSize="14sp"
+        android:text="Your Name: "
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name Here"
+        android:id="@+id/et_name"
+        android:layout_margin="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/neutral"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_text"
+        android:textSize="14sp"
+        android:text="Contact Info: "
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email/Phone number"
+        android:id="@+id/etContact"
+        android:layout_margin="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/neutral"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+</LinearLayout>

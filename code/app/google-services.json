@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "297375651057",
+    "project_id": "sparktrials",
+    "storage_bucket": "sparktrials.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297375651057:android:6305f11e9a42b1a4598550",
+        "android_client_info": {
+          "package_name": "com.example.sparktrials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297375651057-loe9570kf2fuuc6nbaviaos7rm1bd5uu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlE4OX_WTIhMNlYwgVjcrm-sDEMST-EMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297375651057-loe9570kf2fuuc6nbaviaos7rm1bd5uu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

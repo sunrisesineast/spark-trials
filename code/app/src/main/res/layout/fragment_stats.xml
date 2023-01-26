@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Shows some descriptive statistics of an experiment using the two linear layouts
+and then two charts from mikephil.charting.charts-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:id="@+id/descriptives"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height= "200dp"
+                android:id="@+id/table"
+                android:layout_gravity="center_horizontal">
+
+                <TableRow android:padding="1dip">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trials"
+                        android:padding="12dip"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mean"
+                        android:padding="12dip"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Median"
+                        android:padding="12dip"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Std. D"
+                        android:padding="12dip"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q1"
+                        android:padding="12dip"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q3"
+                        android:padding="12dip"/>
+
+
+
+                </TableRow>
+                <TableRow android:padding="1dip">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/trialsID"
+                        android:padding="12dip"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="12dip"
+                        android:id="@+id/meanID"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/medianID"
+                        android:padding="12dip"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stdID"
+                        android:padding="12dip"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/q1ID"
+                        android:padding="12dip"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/q3ID"
+                        android:padding="12dip"
+                        android:textColor="@color/black"/>
+
+
+
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/descriptives"
+            android:text="No Data To Plot"
+            android:gravity="center"
+            android:id="@+id/HistogramID"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textColor="@color/main_text">
+        </TextView>
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/barchartID"
+            android:layout_below="@id/HistogramID"
+            android:layout_marginTop="5dp">
+
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/barchartID"
+            android:text="No Data To Plot"
+            android:gravity="center"
+            android:id="@+id/PlotID"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textColor="@color/main_text">
+        </TextView>
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/PlotID"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linechartID">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

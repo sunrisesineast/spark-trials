@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="387dp"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/trial_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trials"
+                android:textColor="#86AEB4"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/user_trials"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/results_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:textColor="#86AEB4"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/user_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ratio_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ratio"
+                android:textColor="#86AEB4"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/user_ratio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/owner_icon"
+            android:layout_width="16dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user_icon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="63dp"
+            android:layout_height="33dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/ignore_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/top_app_bar_scan_qr_code"
+        android:icon="@drawable/ic_qr_code_scan"
+        android:title="Scan QR Code"
+        android:contentDescription="Scan a QR Code for trials. "
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/top_app_bar_publish_experiment"
+        android:icon="@drawable/ic_add"
+        android:title="Publish Experiment"
+        android:contentDescription="Publish an experiment. "
+        app:showAsAction="ifRoom" />
+
+</menu>

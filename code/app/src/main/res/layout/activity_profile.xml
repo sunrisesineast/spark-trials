@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Shows a profile of another user. Has the topbar at the top, followed by an
+image, then the userid, name, and contact info of that user-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backdrop"
+    tools:context=".main.me.MeFragment" >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/top_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/top_app_bar"
+        android:background="@color/header"
+        android:contentInsetRight="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetEnd="0dp"
+        >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            android:background="@color/header"
+            android:src="@drawable/back_icon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/neutral"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/header"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            app:cardCornerRadius="75dp"
+            app:cardBackgroundColor="@color/lightgrey"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|center_vertical"
+                android:src="@drawable/avatarfree">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/header_right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/backdrop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:paddingTop="20dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/norm_text"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="@color/spark_text"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/backdrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_text"
+        android:textSize="18sp"
+        android:text="UserID: "
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/experimenter_id"
+        android:layout_margin="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/neutral"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_text"
+        android:textSize="18sp"
+        android:text="Name: "
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/experimenter_name"
+        android:layout_margin="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/neutral"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/id3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"
+        android:text="Contact Info: "
+        android:textColor="@color/main_text"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/experimenter_contact"
+        android:layout_margin="4dp"
+        android:drawablePadding="7dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/neutral"
+        android:textSize="14sp"/>
+
+</LinearLayout>

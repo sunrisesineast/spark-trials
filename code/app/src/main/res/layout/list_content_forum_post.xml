@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Shows an answer to a post. Shows which number the answer is,
+the content of the answer, the poster, and the date it was posted-->
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/forum_detail_post_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#1"
+        android:textStyle="bold"
+        android:textColor="@color/title"
+        android:textSize="15sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/forum_detail_post_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forum_detail_post_floor"
+        android:layout_marginTop="5dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor ligula, accumsan non ex ut, tincidunt sollicitudin felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor ligula, accumsan non ex ut, tincidunt sollicitudin felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor ligula, accumsan non ex ut, tincidunt sollicitudin felis. "
+        android:textSize="12dp">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/forum_detail_post_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forum_detail_post_body"
+        android:layout_marginTop="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/forum_detail_post_user_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/forum_user_icon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/forum_detail_post_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/forum_user_icon"
+                android:maxWidth="80dp"
+                android:minWidth="80dp"
+                android:text="user-1234"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/forum_detail_post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/forum_detail_post_user_group"
+            android:layout_toEndOf="@id/forum_detail_post_user_group"
+            android:text="1111-11-11 00:00"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/MinimalDivider"
+        android:layout_below="@id/forum_detail_post_info"/>
+</RelativeLayout>

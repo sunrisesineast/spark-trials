@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--QR Code UI that asks user to fill out what kind of trial they want their
+QR code to complete for them. Has a spinner for pass/fail trials and
+a number entry for measurement/integer count trials-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backdrop"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/norm_text"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:text="Enter QR Code Value"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/norm_text"
+        android:gravity="center_horizontal"
+        android:paddingTop="1dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/header"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/norm_text"
+        android:layout_marginBottom="15dp"/>
+
+    <Spinner
+        android:id="@+id/pass_fail_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="4dp"
+        android:drawablePadding="7dp"
+        android:gravity="top"
+        android:paddingLeft="20dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/countvalue_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:hint="Enter Value"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="4dp"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:text="QR code will increment a count trial"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+
+
+
+</LinearLayout>

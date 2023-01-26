@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--A search fragment to find experiments. Has a search bar where text can be entered in
+A search button that initiates the search. It also has a filter spinner that allows
+the user to tailor their search to specific experiment attributes. Also
+has a listview that will contain the results of the search-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/header">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    </Space>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textSize="40dp"
+        android:textColor="@color/norm_text"
+        android:layout_marginLeft="4dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="Search for experiment..."
+            android:inputType="textPersonName"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></Space>
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:background="@color/header"
+            android:src="@drawable/search_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/filter_list_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="end"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </Space>
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:background="@color/backdrop">
+
+    </ListView>
+
+</LinearLayout>

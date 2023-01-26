@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Has an ask question button and a listview containing every single active question-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/forum_ask_question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/header"
+        android:textAllCaps="false"
+        android:layout_marginRight="10dp"
+        android:text="Ask Question"
+
+        />
+
+    <ListView
+        android:id="@+id/question_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/forum_ask_question_button"/>
+
+    <TextView
+        android:id="@+id/forum_no_post_yet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No post yet."
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:layout_alignTop="@id/question_list"/>
+
+
+
+
+</RelativeLayout>

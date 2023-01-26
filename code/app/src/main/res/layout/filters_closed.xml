@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- To be displayed when the the dropdown list of filters is closed. When it is open, filter_list
+     is displayed instead.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/filters_closed"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:text="Filters"
+        android:textSize="18dp"
+        android:paddingLeft="5dp"/>
+</LinearLayout>
