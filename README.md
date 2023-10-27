@@ -1,6 +1,6 @@
 # SparkTrials
 
-CMPUT 301 group project developed following Scrum and Agile practices.
+CMPUT 301 Software Development group project developed following Scrum and Agile practices.
 
 # Features
 
